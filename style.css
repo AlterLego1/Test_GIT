@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 200px 1fr;
+         grid-template-areas: 
+                "sidebar header"
+                "sidebar content";
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    grid-area: header;
+    background-color: lightgray;
+    text-transform: uppercase;
+    font-size: 30px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    padding: 20px 0 0 20px;
+    grid-area: content;
+    background-color: rgb(255, 234, 207);
+}
+.main__wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 0.5fr 2fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-areas: 
+            "title title"
+            "total transaction"
+            "wallet transaction"
+            "wallet transfer"
+            "statistics transfer"
+            "statistics transfer";
+}
+.title {
+    grid-area: title;
+    background-color: lightcoral;
+}
+.total {
+    grid-area: total;
+    background-color: lightcyan;
+}
+.transaction {
+    grid-area: transaction;
+    background-color: lightgreen;
+}
+.wallet {
+    grid-area: wallet;
+    background-color: lightpink;
+}
+.statistics {
+    grid-area: statistics;
+    background-color: lightsalmon;
+}
+.transfer {
+    grid-area: transfer;
+    background-color: lightseagreen;
+}

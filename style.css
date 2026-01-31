@@ -35,28 +35,51 @@ body{
 }
 
 .main {
-    grid-area: main;
     padding: 20px 0 0 20px;
+    grid-area: main;
     background-color: rgb(255, 216, 169);
 }
 
 .wrapper {
-    
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 0.5fr 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+               "title title"
+               "total transaction"
+               "wallet transaction"
+               "wallet transfer"
+               "statistics transfer"
+               "statistics transfer";
 }
 
 .title {
+    grid-area: title;
+    background-color: lightblue;
 }
 
 .total-info {
+    grid-area: total;
+    background-color: lightcoral;
 }
 
 .transaction {
+    grid-area: transaction;
+    background-color: lightgreen;
 }
 .wallet {
+    grid-area: wallet;
+    background-color: lightsalmon;
 }
 
 .statistics {
+    grid-area: statistics;
+    background-color: lightseagreen;
 }
 
 .transfer {
+    grid-area: transfer;
+    background-color: lightslategrey;
 }

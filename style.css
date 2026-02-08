@@ -1,62 +1,10 @@
-@font-face {
-    font-family: Beer;
-    src: url(fonts/beer-money12.ttf);
+.container {
+    height: 100vh;
+    height: 100vw;
 }
-
-:root{
-    --main-bg-color: rgb(255, 255, 255);
-    --bg-color: rgb(209, 255, 249);
-    --text-color: rgb(0, 0, 0);
-    --shadows: 2px 2px 5px 0 black;
-    --button-color: rgb(89, 255, 255);
+.sidebar {
 }
-
-.dark-mode{
-    --main-bg-color: rgb(0, 0, 0);
-    --bg-color: rgb(110, 110, 110);
-    --text-color: rgb(255, 255, 255);
-    --shadows: 2px 2px 5px 0 rgb(194, 194, 194);
-    --button-color: rgb(8, 182, 182);
+.header {
 }
-
-body{
-    background-color: var(--main-bg-color);
-}
-
-.card {
-    width: 200px;
-    background-color: var(--bg-color);
-    box-shadow: var(--shadows);
-    border-radius: 8px;
-    padding: 1em;
-}
-.card__title {
-    margin: 0;
-    font-family: Beer;
-    text-transform: uppercase;
-    color: var(--text-color);
-}
-.card__info {
-    color: var(--text-color);
-}
-
-p::first-letter{
-    color: brown;
-    font-size: 25px;
-}
-
-.card__button {
-    color: var(--text-color);
-    width: 100%;
-    background-color: var(--button-color);
-    padding: 0.4em;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-
-.card__button:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    outline: 2px solid rgb(110, 149, 255);
+.main {
 }

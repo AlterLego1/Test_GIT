@@ -1,7 +1,11 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 220, 178);
+}
+
 .container {
     margin: 80px auto;
     max-width: 400px;
-    background-color: aquamarine;
 }
 
 .label {
@@ -18,4 +22,33 @@
 
 .input-text {
     width: 100%;
+    font-size: 1.1rem;
+    padding: 0.4em;
+    border-radius: 5px;
+}
+
+.tip {
+    width: 150px;
+    background-color: white;
+    padding: 0.4em;
+    position-try-fallbacks: flip-inline flip-block;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px 0 black;
+    border: none;
+    outline: none;
+    inset: unset;
+    top: anchor(bottom);
+    left: anchor(right);
+}
+
+.tip::backdrop{
+    backdrop-filter: blur(3px) brightness(60%);
+}
+
+.close-btn {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-weight: 700;
 }

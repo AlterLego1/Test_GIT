@@ -1,10 +1,10 @@
-body{
+body {
     margin: 0;
     background-color: rgb(255, 220, 178);
 }
 
 .container {
-    margin: 80px auto;
+    margin: 80px auto 50px;
     max-width: 400px;
 }
 
@@ -41,7 +41,7 @@ body{
     left: anchor(right);
 }
 
-.tip::backdrop{
+.tip::backdrop {
     backdrop-filter: blur(3px) brightness(60%);
 }
 
@@ -51,4 +51,12 @@ body{
     background-color: red;
     color: white;
     font-weight: 700;
+}
+
+.star {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(187, 22, 137);
+    clip-path: polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
 }

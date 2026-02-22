@@ -1,0 +1,21 @@
+.container {
+    margin: 80px auto;
+    max-width: 400px;
+    background-color: aquamarine;
+}
+
+.label {
+    margin: 0 0 0.2em;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.btn-tip {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input-text {
+    width: 100%;
+}

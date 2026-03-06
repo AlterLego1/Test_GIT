@@ -17,11 +17,23 @@ body{
 .sidebar {
     grid-area: sidebar;
     background-color: black;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .header {
     grid-area: header;
     background-color: rgb(182, 103, 255);
+     color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
@@ -30,4 +42,5 @@ body{
 }
 
 .wrapper {
+    display: grid;
 }

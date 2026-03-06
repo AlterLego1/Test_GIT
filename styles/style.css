@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+               "sidebar header"
+               "sidebar main";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: black;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(182, 103, 255);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(255, 226, 187);
+}
+
+.wrapper {
+}

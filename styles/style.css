@@ -37,10 +37,47 @@ body{
 }
 
 .main {
+    padding: 20px 0 0 20px;
     grid-area: main;
     background-color: rgb(255, 226, 187);
 }
 
 .wrapper {
+    width: 100%;
+    height: 100%;
     display: grid;
+    grid-template-rows: 1fr 1fr 2fr .5fr 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+              "title title"
+              "total transactions"
+              "wallet transactions"
+              "wallet transfer"
+              "statistic transfer"
+              "statistic transfer";
+}
+
+.title {
+    grid-area: title;
+    background-color: lightblue;
+}
+.total {
+    grid-area: total;
+    background-color: lightcoral;
+}
+.transactions {
+    grid-area: transactions;
+    background-color: lightgreen;
+}
+.wallet {
+    grid-area: wallet;
+    background-color: lightskyblue;
+}
+.transfer {
+    grid-area: transfer;
+    background-color: lightseagreen;
+}
+.statistic {
+    grid-area: statistic;
+    background-color: lightsalmon;
 }

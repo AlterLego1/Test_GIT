@@ -59,3 +59,17 @@ body{
     background-color: red;
     cursor: pointer;
 }
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 250px;
+    height: 250px;
+    background-color: crimson;
+    margin: 0 auto;
+    transition: 1s background-color, 1s scale;
+}
+
+.star:hover{
+    scale: 1.2;
+    background-color: blue;
+}

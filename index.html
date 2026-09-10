@@ -10,9 +10,12 @@
 <body>
    <form class="form">
     <label class="label" for="textInputId">Расскажите про свой опыт
-      <button type="button" class="menu-btn">🔎</button>
+      <button type="button" popovertarget="tipId" class="menu-btn" popovertargetaction="show">🔎</button>
     </label>
     <textarea name="textInput" class="textInput" id="textInputId" placeholder="Введите текст..."></textarea>
+    <div class="tip" id="tipId" popover="manual">
+      <button type="button" class="close" popovertarget="tipId" popovertargetaction="hide">X</button>
+      Если хочешь остаться, останься просто так!</div>
    </form>
 </body>
 </html>

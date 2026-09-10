@@ -6,15 +6,12 @@ body{
 .form{
    margin: 80px auto;
    max-width: 400px;
-   display: flex;
-   justify-content: start;
-   align-items: center;
-   flex-wrap: wrap;
 }
 
 .label {
+    display: block;
     margin: 5px 0;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: 800;
     
 }
@@ -27,4 +24,38 @@ body{
 
 .textInput {
     width: 100%;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 0.3em;
+}
+
+.tip {
+    position-anchor: auto; 
+    width: 150px;
+    padding: 0.5em;
+    position-try-fallbacks: flip-inline, flip-block;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.836);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.705);
+    border: none;
+    inset: unset;
+    top: anchor(bottom);
+    left: anchor(right); 
+    
+}
+
+.tip::backdrop{
+    backdrop-filter: blur(3px) brightness(60%);
+}
+
+.close{
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
+.close:hover{
+    background-color: red;
+    cursor: pointer;
 }

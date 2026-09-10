@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  background-color: burlywood;
+}
+
+.form{
+   margin: 80px auto;
+   max-width: 400px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.label {
+    margin: 5px 0;
+    font-size: 1.4em;
+    font-weight: 800;
+    
+}
+
+.menu-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.textInput {
+    width: 100%;
+}
